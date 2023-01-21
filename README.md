@@ -1,5 +1,5 @@
 # Movies API
-## Usage
+## Installation
 Start a virtual environment and execute the following commands:
 
 - pip install -r requirements.txt
@@ -11,3 +11,4 @@ Start a virtual environment and execute the following commands:
 Default superuser credentials:
 - username = admin
 - password = 1234
+## Usage
