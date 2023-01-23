@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     'rest_framework',
-    "apps.users"
+    'rest_framework.authtoken',
+    "apps.users",
+    "apps.movies"
 ]
 
 MIDDLEWARE = [
@@ -86,6 +88,8 @@ DATABASES = {
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
+AUTH_USER_MODEL = 'users.user'
+
 AUTH_PASSWORD_VALIDATORS = [
     {
         "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
@@ -101,6 +105,14 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'apps.users.auth.ExpiringTokenAuthentication',  # custom authentication class
+    ),
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    )
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
