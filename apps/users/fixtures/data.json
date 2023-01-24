@@ -1,5 +1,6 @@
 [
-    { "model": "users.user",
+    {
+        "model": "users.user",
         "pk": 1,
         "fields": {
             "username": "admin",
@@ -11,7 +12,8 @@
             "is_active": true
         }
     },
-    { "model": "users.user",
+    {
+        "model": "users.user",
         "pk": 2,
         "fields": {
             "username": "carlos",
@@ -23,5 +25,4 @@
             "is_active": true
         }
     }
-
 ]

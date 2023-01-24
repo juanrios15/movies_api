@@ -45,7 +45,7 @@ class MovieTestCase(TestCase):
             "directed_by": "Martin Scorcese",
             "running_time": 157,
             "language": "English",
-            "is_private": True
+            "is_private": True,
         }
         response = client.post("/movies/movies/", data, format="json")
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
