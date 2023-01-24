@@ -1,0 +1,27 @@
+[
+    { "model": "users.user",
+        "pk": 1,
+        "fields": {
+            "username": "admin",
+            "password": "pbkdf2_sha256$320000$cyE6udZJ4FUKxbcX2oNxfL$gFGx1Fnfqh0hFQwsM1H/aWDJ8ozHphoc4E6UscvTokI=",
+            "email": "admin@admin.com",
+            "first_name": "Juan",
+            "is_superuser": true,
+            "is_staff": true,
+            "is_active": true
+        }
+    },
+    { "model": "users.user",
+        "pk": 2,
+        "fields": {
+            "username": "carlos",
+            "password": "pbkdf2_sha256$320000$cyE6udZJ4FUKxbcX2oNxfL$gFGx1Fnfqh0hFQwsM1H/aWDJ8ozHphoc4E6UscvTokI=",
+            "email": "carlos@burgos.com",
+            "first_name": "Carlos",
+            "is_superuser": false,
+            "is_staff": false,
+            "is_active": true
+        }
+    }
+
+]

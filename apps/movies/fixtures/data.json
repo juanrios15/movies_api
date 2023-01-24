@@ -1,0 +1,54 @@
+[
+    { "model": "movies.movie",
+        "pk": 1,
+        "fields": {
+            "name": "The shutter island",
+            "summary": "Movie about an island",
+            "release_date": "2003-01-01",
+            "directed_by": "Martin Scorcese",
+            "running_time": 147,
+            "language": "English",
+            "is_private": false,
+            "user": 1
+        }
+    },
+    { "model": "movies.movie",
+        "pk": 2,
+        "fields": {
+            "name": "The origin",
+            "summary": "Movie about dreams",
+            "release_date": "2008-01-01",
+            "directed_by": "Martin Scorcese",
+            "running_time": 157,
+            "language": "English",
+            "is_private": true,
+            "user": 1
+        }
+    },
+    { "model": "movies.movie",
+        "pk": 3,
+        "fields": {
+            "name": "Taxi Driver",
+            "summary": "Movie about a taxi driver",
+            "release_date": "1968-01-01",
+            "directed_by": "Martin Scorcese",
+            "running_time": 157,
+            "language": "English",
+            "is_private": false,
+            "user": 2
+        }
+    },
+    { "model": "movies.movie",
+        "pk": 4,
+        "fields": {
+            "name": "Avatar",
+            "summary": "Movie about blue aliens",
+            "release_date": "2009-01-01",
+            "directed_by": "James Cameron",
+            "running_time": 187,
+            "language": "English",
+            "is_private": false,
+            "user": 2
+        }
+    }
+]
