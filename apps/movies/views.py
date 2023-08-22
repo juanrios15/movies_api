@@ -11,6 +11,10 @@ from .models import Movie
 class MovieViewSet(viewsets.ModelViewSet):
     queryset = Movie.objects.all()
     serializer_class = MovieSerializer
+    filterset_fields = {
+        "name": ["exact", "icontains"],
+        "directed_by": ["exact", "icontains"],
+    }
 
     def get_queryset(self):
         return Movie.objects.filter(Q(is_private=False) | Q(user=self.request.user))
